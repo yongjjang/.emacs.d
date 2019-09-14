@@ -26,6 +26,7 @@
 
 
 
+
 ;; org-mode start
 (global-font-lock-mode t)
 (transient-mark-mode 1)

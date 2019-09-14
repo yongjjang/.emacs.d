@@ -450,7 +450,7 @@
  ;; If there is more than one, they won't work right.
  '(initial-frame-alist (quote ((fullscreen . maximized))))
  '(org-agenda-files (quote ("~/Documents/org/1.org" "~/Documents/org/2.org")))
- '(package-selected-packages (quote (markdown-preview-mode))))
+ '(package-selected-packages (quote (auto-complete markdown-preview-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
