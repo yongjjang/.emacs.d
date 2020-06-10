@@ -1,7 +1,19 @@
+(setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
+                         ("melpa" . "https://melpa.org/packages/")))
+
 (require 'package)
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 (add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/"))
+(add-to-list 'package-archives '("popkit" . "http://elpa.popkit.org/packages/"))
+
+
+
+;; Init Command
+;; (package-initialize)
+;; (package-refresh-contents)
+;; (package-install 'use-package)
+
 
 ;; Full Secreen mode
 (custom-set-variables
@@ -13,7 +25,6 @@
 (scroll-bar-mode -1)
 
 (show-paren-mode 1)
-
 
 ;; init usage screen off
 (setq inhibit-startup-screen t)
@@ -55,4 +66,10 @@
 (setq custom-file "~/.emacs.d/themes/dracula-theme.el")
 (load custom-file)
 
-
+(use-package auto-complete
+  :ensure t
+  :init
+  (progn
+    (ac-config-default)
+    (global-auto-complete-mode t)
+    ))
